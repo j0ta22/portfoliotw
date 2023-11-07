@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static tailwind_tags %}
+
+{% block content %}
+<div class="container mx-auto text-center pt-20">
+
+    <h2 class="text-3xl text-gray-400 font-bold">My projects</h3>
+    <p class="text-base text-gray-400 pt-6">These are some of the works I have developed.</p>
+    <div class="flex flex-wrap justify-center pt-10">
+    {% for project in projects %}
+
+
+        <div class="max-w-sm rounded m-4 overflow-hidden shadow-md shadow-slate-600 border-2 border-slate-800">
+            <img src="{{project.image.url}}" alt="{{project.title}}" class="w-auto">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-gray-400">{{project.title}}</div>
+              <p class="text-gray-400 text-base text-justify">{{project.description}}</p>
+            </div>
+            <div class="pb-2">
+                {% if project.url %}
+        
+                    <a href="{{project.url}}" class="bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2" target="_blank">{{project.url}}</a>
+        
+                {% endif %}
+            </div>
+          </div>
+
+
+
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
