@@ -161,3 +161,7 @@ INTERNAL_IPS = [
 
 NPM_BIN_PATH = "/usr/bin/npm"
 #NPM_BIN_PATH = r"D:\Program Files\nodejs\npm.cmd"
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
