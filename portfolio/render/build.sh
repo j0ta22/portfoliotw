@@ -3,6 +3,6 @@
 set -o errexit
 
 pip install -r ./portfolio/requirements.txt 
-python manage.py collectstatic --no-input
-python manage.py migrate
-python manage.py tailwind build 
+python ./portfolio/manage.py collectstatic --no-input
+python ./portfolio/manage.py migrate
+python ./portfolio/manage.py tailwind build 
