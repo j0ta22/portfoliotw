@@ -3,6 +3,7 @@
 set -o errexit
 
 npm i -g rimraf
+npm install cross-env
 pip install -r ./portfolio/requirements.txt 
 python ./portfolio/manage.py collectstatic --no-input
 python ./portfolio/manage.py migrate
