@@ -2,6 +2,7 @@
 # exit on error
 set -o errexit
 
+npm i -g yarn
 npm i -g rimraf
 npm install cross-env
 pip install -r ./portfolio/requirements.txt 
