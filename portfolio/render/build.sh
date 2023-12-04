@@ -2,6 +2,8 @@
 # exit on error
 set -o errexit
 
+rm -rf node_modules
+npm install
 npm cache clear --force
 npm i -g yarn
 npm i -g rimraf
