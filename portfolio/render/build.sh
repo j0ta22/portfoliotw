@@ -11,6 +11,7 @@ npm update
 npm install -g tailwindcss
 npm install --save-dev tailwindcss
 npm install --save-dev postcss-simple-vars
+npm install --save-dev @tailwindcss/forms
 pip install -r ./portfolio/requirements.txt 
 python ./portfolio/manage.py collectstatic --no-input
 python ./portfolio/manage.py migrate
