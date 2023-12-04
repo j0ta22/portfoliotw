@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "theme",
     "django_browser_reload",
     "portfolioapp",
+    "environ",
 ]
 
 MIDDLEWARE = [
