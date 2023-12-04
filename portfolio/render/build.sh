@@ -9,6 +9,7 @@ npm i -g rimraf
 npm install cross-env
 npm update
 npm install -g tailwindcss
+npm install --save-dev tailwindcss
 pip install -r ./portfolio/requirements.txt 
 python ./portfolio/manage.py collectstatic --no-input
 python ./portfolio/manage.py migrate
