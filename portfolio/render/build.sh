@@ -20,6 +20,7 @@ npm install --save-dev postcss-nested
 npm install --save-dev postcss-import
 npm install --save-dev postcss
 npm install --save-dev cross-env
+pip install django-environ
 pip install -r ./portfolio/requirements.txt 
 python ./portfolio/manage.py collectstatic --no-input
 python ./portfolio/manage.py migrate
